@@ -1,26 +1,23 @@
-.header {
-    list-style-type: none;
-    margin: 10px;
-    overflow: hidden;
-    margin-right: 16px;
-    font-family: arial, sans-serif;
-    font-size: 13px;
-    float: right;
-    position: relative;
-    display: block;
+#secenek {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 14px;
+    font: 13px/27px Roboto, Arial, sans-serif;
+    line-height: normal;
 }
 
-.headerli a {
-    display: block;
+a {
     color: black;
-    text-align: center;
-    padding: 5px 5px;
     text-decoration: none;
-    display: inline;
-    
+    font-size: 15px;
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 20px;
 }
 
-.headerli a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -32,6 +29,7 @@
 .search-area {
     background: #fff;
     display: flex;
+    border-radius: 24px;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     z-index: 3;
@@ -52,11 +50,12 @@
     padding-left: 14px;
 }
 
+
 .search-img {
     display: flex;
     align-items: center;
-    padding-right: 13px;
     margin-top: -5px;
+    background-color: transparent;
 }
 
 .search-img span {
@@ -64,6 +63,7 @@
     height: 20px;
     width: 20px;
     margin-top: 0px;
+    background-color: transparent;
     display: inline-block;
     fill: currentColor;
     line-height: 24px;
@@ -71,48 +71,78 @@
 }
 
 .input-enter {
+    
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    border-radius: 100px;
+
+
 }
 
 .input-area {
+    
+    margin-bottom: 65px;
     color: transparent;
     flex: 100%;
     white-space: pre;
     font: 16px arial, sans-serif;
     line-height: 34px;
     height: 34px !important;
-    display: block;
+    
 }
 
 .input {
+    margin-top: 500px;
+    display: inline-block;
+    writing-mode: horizontal-tb !important;
+    border: none;
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.87);
     word-wrap: break-word;
     outline: none;
-    display: flex;
     flex: 100%;
     margin-top: -68px;
     font: 16px arial, sans-serif;
-    line-height: 34px;
+    line-height: normal;
     height: 34px !important;
-    text-rendering: auto;
+
+
+}
+
+.buttons {
+    display: block;
+    text-align: -webkit-center;
+    padding-top: 15px;
+}
+
+.buttons a {
+    writing-mode: horizontal-tb !important;
+    color: fieldtext;
     letter-spacing: normal;
     word-spacing: normal;
+    line-height: normal;
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
+    display: inline-block;
     text-align: start;
-    appearance: textfield;
-    cursor: text;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
 }
 
 .googlesearch {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
+    height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
@@ -120,12 +150,26 @@
 }
 
 .feelinglucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
+    height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     user-select: none;
+
+}
+
+.googlesearch:hover,
+.feelinglucky:hover {
+    box-shadow: 1px 1px 1px 1px rgba(112, 112, 112, 0.24);
 }
 
 .footer {
@@ -133,20 +177,22 @@
     padding: 0;
     overflow: hidden;
     border: 1px solid #dfe1e5;
-    border-top: 1px solid #dadce0;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin-left: -8px;
     line-height: 10px;
     list-style-type: none;
+    background-color: #f2f2f2;
+
+
 }
 
 .footerli {
     float: left;
 }
 
-.footerli a{
+.footerli a {
     display: block;
     color: #70757a;
     text-align: center;
@@ -162,4 +208,13 @@
 
 .footerli a:hover {
     text-decoration: underline;
+}
+
+.footer-bir {
+    padding: 10px 1px;
+    color: #70757a;
+    margin-bottom: 40px;
+    border-bottom: #dfe1e5;
+    text-decoration: none;
+    border-top: #fff;
 }
